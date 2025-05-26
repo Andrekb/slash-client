@@ -7,7 +7,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 function App() {
   return (
     <AuthProvider>
-      <BrowserRouter basename="/dashboard">
+      <BrowserRouter>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
           <Route element={<ProtectedRoute />}>
